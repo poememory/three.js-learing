@@ -203,7 +203,7 @@ if (neck && waist) {
 }
 });
 
-let raycaster=new THREE.Raycaster();
+let raycaster=new THREE.Raycaster();//声明并初始化raycaster对象，用于射线投射：
 let currentlyAnimating=false;//播放状态
 window.addEventListener('click', e => raycast(e));
 function raycast(e) {
